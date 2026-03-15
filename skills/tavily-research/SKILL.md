@@ -1,8 +1,10 @@
----name: tavily-research
+---
+name: tavily-research
 
 name: tavily-research
 description: "Comprehensive research grounded in web data with explicit citations. Use when you need multi-source synthesis—comparisons, current events, market analysis, detailed reports. "
 ---
+
 # Research Skill
 
 Conduct comprehensive research on any topic with automatic source gathering, analysis, and response generation with citations.

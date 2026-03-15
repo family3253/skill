@@ -1,8 +1,10 @@
----name: obsidian-plugin-tasks
+---
+name: obsidian-plugin-tasks
 
 name: obsidian-plugin-tasks
 description: 使用Tasks插件在Obsidian中管理和查询任务，支持任务状态跟踪、截止日期、计划日期、创建日期、重复规则、任务依赖等功能。提供强大的查询语法（Tasks Query Language）创建动态任务列表，支持过滤、排序、分组。适用于个人任务管理、项目跟踪、GTD实践、每日计划、习惯追踪等场景。当用户提到Tasks插件、任务管理、TODO列表、任务查询语法、重复任务、任务状态等概念时使用。
 ---
+
 重要前提
 Tasks插件是主动式任务管理系统：与Dataview不同，Tasks插件会直接修改源文件内容（例如完成任务、更新重复任务）。所有修改都遵循严格的规则，确保数据一致性。查询结果支持交互（如勾选框），勾选后会自动更新源文件。
 
