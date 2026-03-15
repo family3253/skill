@@ -1,4 +1,5 @@
----
+---name: summarize
+
 name: summarize
 description: Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).
 homepage: https://summarize.sh

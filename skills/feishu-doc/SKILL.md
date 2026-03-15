@@ -1,4 +1,5 @@
----
+---name: feishu-doc
+
 name: feishu-doc
 description: Fetch content from Feishu (Lark) Wiki, Docs, Sheets, and Bitable. Automatically resolves Wiki URLs to real entities and converts content to Markdown.
 tags: [feishu, lark, wiki, doc, sheet, document, reader, writer]
