@@ -71,6 +71,7 @@ API docs, syntax guides, tool documentation (office docs)
 
 ## Directory Structure
 
+
 ```
 skills/
   skill-name/
@@ -134,6 +135,7 @@ What goes wrong + fixes
 ## Real-World Impact (optional)
 Concrete results
 ```
+
 
 ## Claude Search Optimization (CSO)
 
