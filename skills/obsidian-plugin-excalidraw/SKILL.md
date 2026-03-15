@@ -1,5 +1,5 @@
 ---
-name: obsidian-excalidraw
+name: obsidian-plugin-excalidraw
 description: 生成符合当前 Excalidraw JSON Schema 的白板文件（.excalidraw），支持形状、智能连线、文本绑定、Obsidian 内部链接。兼容 Obsidian Excalidraw 插件 2.0+，用于绘制架构图、流程图、思维导图。
 ---
 
