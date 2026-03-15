@@ -1,8 +1,5 @@
 ---
 name: gsd
-
-name: gsd
-
 description: Wrapper skill for the Get Shit Done (GSD) multi-agent workflow system. Provides install + usage pointers for OpenCode/Codex/Claude.
 ---
 

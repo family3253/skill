@@ -1,7 +1,5 @@
 ---
 name: feishu-common
-
-name: feishu-common
 description: (autofixed)
 ---
 

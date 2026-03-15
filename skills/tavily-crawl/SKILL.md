@@ -1,8 +1,5 @@
 ---
 name: tavily-crawl
-
-name: tavily-crawl
-
 description: "Crawl any website and save pages as local markdown files. Use when you need to download documentation, knowledge bases, or web content for offline access or analysis. No code required - just provide a URL."
 ---
 

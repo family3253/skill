@@ -1,8 +1,5 @@
 ---
 name: add-skill
-
-name: add-skill
-
 description: Wrapper skill for the add-skill CLI. Installs skills from arbitrary GitHub repos for OpenCode/Claude/Codex.
 ---
 

@@ -1,8 +1,5 @@
 ---
 name: obsidian-plugin-templater
-
-name: obsidian-plugin-templater
-
 description: 创建和编辑带有变量、函数、控制流和Obsidian特定语法的Templater模板。当处理包含Templater模板的.md文件、创建动态内容，或用户提及Templater、模板变量或模板函数时使用。
 ---
 

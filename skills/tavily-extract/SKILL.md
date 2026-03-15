@@ -1,8 +1,5 @@
 ---
 name: tavily-extract
-
-name: tavily-extract
-
 description: "Extract content from specific URLs using Tavily's extraction API. Returns clean markdown/text from web pages. Use when you have specific URLs and need their content without writing code."
 ---
 

@@ -1,8 +1,5 @@
 ---
 name: gsd-oc-select-model
-
-name: gsd-oc-select-model
-
 description: Interactive model selection workflow with paginated navigation. Use when users want to select a model interactively - guides them through provider selection then model selection using the question tool with pagination support for large lists.
 ---
 
