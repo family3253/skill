@@ -1,6 +1,8 @@
 ---
 name: powerpoint-automation
 
+name: powerpoint-automation
+
 description: Create professional PowerPoint presentations from various sources including web articles, blog posts, and existing PPTX files. Use when creating PPTX, converting articles to slides, or translating presentations.
 license: CC BY-NC-SA 4.0
 metadata:

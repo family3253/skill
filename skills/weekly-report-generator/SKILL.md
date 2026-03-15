@@ -1,5 +1,7 @@
 ---
 name: weekly-report-generator
+
+name: weekly-report-generator
 description: Auto-generate structured weekly business reports covering KPIs, accomplishments, blockers, and plans. Save hours of reporting time every week.
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: awesome-claude-skills
+
+name: awesome-claude-skills
 description: Wrapper/index for the awesome-claude-skills collection repository.
 ---
 

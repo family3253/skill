@@ -1,6 +1,8 @@
 ---
 name: remotion-skill
 
+name: remotion-skill
+
 description: 动画逻辑图工厂。用户描述想要的动画（ASCII 草图或文字），自动生成 Remotion 代码并渲染为 GIF。当用户提到动画、逻辑图、GIF、Remotion 时触发。
 ---
 

@@ -1,6 +1,8 @@
 ---
 name: task-status
 
+name: task-status
+
 description: Send short status descriptions in chat for long-running tasks. Use when you need to provide periodic updates during multi-step operations, confirm task completion, or notify of failures. Includes automated periodic monitoring that sends updates every 5 seconds, status message templates, and a helper function for consistent status reporting.
 ---
 

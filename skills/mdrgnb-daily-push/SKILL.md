@@ -1,6 +1,8 @@
 ---
 name: mdrgnb-daily-push
 
+name: mdrgnb-daily-push
+
 description: 固化 MDRGNB 文献日/周报流程（当天新发表检索、去重、Top3 筛选、10问深度总结、四维评分、落盘与推送）。当用户提到 MDRGNB 日报、文献推送、深度总结、Top3、周报、PubMed 当日新文献时使用。
 ---
 

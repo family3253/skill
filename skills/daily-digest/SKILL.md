@@ -1,5 +1,7 @@
 ---
 name: daily-digest
+
+name: daily-digest
 description: (autofixed)
 ---
 
