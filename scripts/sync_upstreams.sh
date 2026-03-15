@@ -12,10 +12,14 @@ TMP_DIR="${TMP_DIR:-/tmp/skill-upstreams}"
 
 mkdir -p "$TMP_DIR" "$SKILLS_DIR"
 
+echo "[sync] repo=$(basename \"$ROOT_DIR\") skills_dir=$SKILLS_DIR tmp_dir=$TMP_DIR"
+
 # Robust default-branch handling:
 # Many upstream repos use `main`, some use `master` (or others). We always sync from origin/HEAD.
 clone_or_update() {
   local url="$1"; local dir="$2"
+
+  echo "[sync] upstream=$url => $TMP_DIR/$dir"
 
   if [[ -d "$TMP_DIR/$dir/.git" ]]; then
     git -C "$TMP_DIR/$dir" remote set-url origin "$url" || true
