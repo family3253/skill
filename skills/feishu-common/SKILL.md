@@ -1,3 +1,8 @@
+---
+name: feishu-common
+description: (autofixed)
+---
+
 # feishu-common Skill
 
 ## Description

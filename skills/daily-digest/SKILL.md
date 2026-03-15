@@ -1,3 +1,8 @@
+---
+name: daily-digest
+description: (autofixed)
+---
+
 # daily-digest Skill
 
 Purpose: Generate a daily digest from memory and interactions, stored as journals/digest/digest-YYYY-MM-DD.md.
