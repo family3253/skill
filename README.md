@@ -211,3 +211,7 @@ cd <this-repo>
 
 - 自动同步（GitHub Actions）：本仓库包含 `sync-upstreams` 工作流（每天定时 + 支持手动触发），会从上游仓库拉取更新并自动提交到 main。
 
+## Provenance / 上游来源
+
+每个 skill 的上游仓库与路径见：[`PROVENANCE.md`](./PROVENANCE.md)
+
