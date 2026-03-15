@@ -1,0 +1,12 @@
+# secrets / runtime state
+**/runtime/config.json
+**/runtime/logs/
+**/scripts/logs/
+
+# node/python
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+
+# logs
+**/*.log
