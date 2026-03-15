@@ -1,6 +1,6 @@
----name: context-master
-
+---
 name: context-master
+
 description: "Universal context management and planning system. PROACTIVELY activate for: (1) ANY complex task requiring planning, (2) Multi-file projects/websites/apps, (3) Architecture decisions, (4) Research tasks, (5) Refactoring, (6) Long coding sessions, (7) Tasks with 3+ sequential steps. Provides: optimal file creation order, context-efficient workflows, extended thinking delegation (23x context efficiency), passive deep analysis architecture, progressive task decomposition, and prevents redundant work. Saves 62% context on average. Essential for maintaining session performance and analytical depth."
 ---
 
@@ -31,7 +31,6 @@ This applies to:
 - **Repository cleanliness**: Keep repository root clean - only README.md unless user requests otherwise
 - **Style**: Documentation should be concise, direct, and professional - avoid AI-generated tone
 - **User preference**: Only create additional .md files when user specifically asks for documentation
-
 
 
 ---
@@ -1262,7 +1261,6 @@ Phase 4: Implementation
 ```
 
 **Why it works:** Deep analysis happens once (isolated), execution follows clean plan.
-
 
 
 ## Best Practices (Universal)

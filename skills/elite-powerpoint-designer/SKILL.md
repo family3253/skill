@@ -1,6 +1,6 @@
----name: elite-powerpoint-designer
-
+---
 name: elite-powerpoint-designer
+
 description: Create world-class PowerPoint presentations with professional design, consistent branding, sophisticated animations, and polished visual hierarchy. Use when users request presentations, slide decks, pitches, reports, or want to convert markdown to professionally designed PowerPoint with Apple/Microsoft/Google-level quality.
 ---
 

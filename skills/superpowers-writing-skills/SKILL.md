@@ -1,6 +1,6 @@
----name: superpowers-writing-skills
-
+---
 name: superpowers-writing-skills
+
 description: Use when creating new skills, editing existing skills, or verifying skills work before deployment
 ---
 
@@ -72,7 +72,6 @@ API docs, syntax guides, tool documentation (office docs)
 
 ## Directory Structure
 
-
 ```
 skills/
   skill-name/
@@ -136,7 +135,6 @@ What goes wrong + fixes
 ## Real-World Impact (optional)
 Concrete results
 ```
-
 
 ## Claude Search Optimization (CSO)
 

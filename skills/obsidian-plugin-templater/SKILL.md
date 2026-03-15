@@ -1,6 +1,6 @@
----name: obsidian-plugin-templater
-
+---
 name: obsidian-plugin-templater
+
 description: 创建和编辑带有变量、函数、控制流和Obsidian特定语法的Templater模板。当处理包含Templater模板的.md文件、创建动态内容，或用户提及Templater、模板变量或模板函数时使用。
 ---
 
@@ -714,7 +714,6 @@ tR = `${startTime} - ${endTime}`;
 
 ## Notes
 
-
 ## Decisions
 
 - 
@@ -752,7 +751,6 @@ priority: medium
 
 ## Overview
 
-
 ## Goals
 
 - 
@@ -772,7 +770,6 @@ priority: medium
 - 
 
 ## Notes
-
 
 <% tp.file.cursor() %>
 ```
@@ -1243,7 +1240,6 @@ status: planning
 
 ## 概述
 
-
 ## 任务
 
 - [ ] 项目初始化
@@ -1254,7 +1250,6 @@ status: planning
 - [ ] 交付
 
 ## 资源
-
 
 ## 备注
 
@@ -1281,7 +1276,6 @@ project: ${projectName}
 - 
 
 ## 讨论内容
-
 
 ## 行动项
 

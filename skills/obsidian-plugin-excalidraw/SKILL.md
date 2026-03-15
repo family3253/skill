@@ -1,6 +1,6 @@
----name: obsidian-plugin-excalidraw
-
+---
 name: obsidian-plugin-excalidraw
+
 description: 生成符合当前 Excalidraw JSON Schema 的白板文件（.excalidraw），支持形状、智能连线、文本绑定、Obsidian 内部链接。兼容 Obsidian Excalidraw 插件 2.0+，用于绘制架构图、流程图、思维导图。
 ---
 
@@ -46,7 +46,6 @@ Excalidraw 文件为 JSON 格式，扩展名 `.excalidraw`。**必须**包含以
 - **渲染层级 (Z-Index)**：由 `elements` 数组顺序决定。
   - **建议顺序**：为避免遮挡，建议顺序为：背景容器 → 前景容器 → 箭头 → 文本。
   - **绑定关系**：绑定关系仅依赖 ID 引用，与数组顺序无关。箭头绑定依赖目标元素已存在 ID。
-
 
 
 ### 元素常见字段（大部分元素具有，类型特定字段见后文）
@@ -114,7 +113,6 @@ Excalidraw 文件为 JSON 格式，扩展名 `.excalidraw`。**必须**包含以
   "locked": false
 }
 ```
-
 
 
 ### 元素类型详解与几何逻辑
@@ -412,7 +410,6 @@ Baseline 计算公式 (近似值)：
 - 禁止在文件中包含编辑器标记、行号引用或代码块标记
 - 确保文件编码为UTF-8，无BOM
 - 验证生成的JSON格式正确，可使用JSON验证工具检查
-
 
 ------
 

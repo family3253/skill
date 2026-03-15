@@ -1,6 +1,6 @@
----name: tavily-search
-
+---
 name: tavily-search
+
 description: "Search the web using Tavily's LLM-optimized search API. Returns relevant results with content snippets, scores, and metadata. Use when you need to find web content on any topic without writing code."
 ---
 

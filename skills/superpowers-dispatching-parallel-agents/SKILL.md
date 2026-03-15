@@ -1,6 +1,6 @@
----name: superpowers-dispatching-parallel-agents
-
+---
 name: superpowers-dispatching-parallel-agents
+
 description: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
 ---
 
