@@ -9,19 +9,37 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SKILLS_DIR="$ROOT_DIR/skills"
 TMP_DIR="${TMP_DIR:-/tmp/skill-upstreams}"
-BRANCH="${BRANCH:-main}"
 
 mkdir -p "$TMP_DIR" "$SKILLS_DIR"
 
+# Robust default-branch handling:
+# Many upstream repos use `main`, some use `master` (or others). We always sync from origin/HEAD.
 clone_or_update() {
   local url="$1"; local dir="$2"
+
   if [[ -d "$TMP_DIR/$dir/.git" ]]; then
-    git -C "$TMP_DIR/$dir" fetch --depth 1 origin "$BRANCH" || true
-    git -C "$TMP_DIR/$dir" checkout -q "$BRANCH" || true
-    git -C "$TMP_DIR/$dir" reset --hard "origin/$BRANCH" || true
+    git -C "$TMP_DIR/$dir" remote set-url origin "$url" || true
+    git -C "$TMP_DIR/$dir" fetch --depth 1 origin || true
+
+    # Try to resolve default branch (origin/HEAD)
+    local head_ref
+    head_ref=$(git -C "$TMP_DIR/$dir" symbolic-ref -q --short refs/remotes/origin/HEAD 2>/dev/null || true)
+    if [[ -z "$head_ref" ]]; then
+      # Fallback: parse "HEAD branch" from remote show
+      local head_branch
+      head_branch=$(git -C "$TMP_DIR/$dir" remote show origin 2>/dev/null | awk '/HEAD branch/ {print $NF}' || true)
+      if [[ -n "$head_branch" ]]; then
+        head_ref="origin/$head_branch"
+      fi
+    fi
+    # Last resort
+    [[ -z "$head_ref" ]] && head_ref="origin/main"
+
+    git -C "$TMP_DIR/$dir" reset --hard "$head_ref" || true
   else
     rm -rf "$TMP_DIR/$dir"
-    git clone --depth 1 --branch "$BRANCH" "$url" "$TMP_DIR/$dir"
+    # Clone default branch only (no hardcoded branch name)
+    git clone --depth 1 "$url" "$TMP_DIR/$dir"
   fi
 }
 
