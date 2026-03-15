@@ -197,3 +197,17 @@ npx -y skills add https://github.com/family3253/skill -g --list
 - **add-skill** — Wrapper skill for the add-skill CLI. Installs skills from arbitrary GitHub repos for OpenCode/Claude/Codex.
 - **awesome-claude-skills** — Wrapper/index for the awesome-claude-skills collection repository.
 - **gsd** — Wrapper skill for the Get Shit Done (GSD) multi-agent workflow system. Provides install + usage pointers for OpenCode/Codex/Claude.
+
+---
+
+## Upstream 同步 / Upstream Sync
+
+- 手动同步（本地）：
+
+```bash
+cd <this-repo>
+./scripts/sync_upstreams.sh
+```
+
+- 自动同步（GitHub Actions）：本仓库包含 `sync-upstreams` 工作流（每天定时 + 支持手动触发），会从上游仓库拉取更新并自动提交到 main。
+

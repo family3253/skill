@@ -1,0 +1,43 @@
+name: sync-upstreams
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *' # daily 03:00 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstreams
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rsync
+
+      - name: Sync upstreams
+        run: |
+          ./scripts/sync_upstreams.sh
+
+      - name: Commit & push if changed
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "sync: upstream update"
+            git push
+          else
+            echo "No changes"
+          fi
